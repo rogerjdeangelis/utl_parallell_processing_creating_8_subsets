@@ -27,7 +27,7 @@ Running 8 processes in parallel to subset a large dataset. Not a good example bu
     ```        systask command "&_s -termstmt %nrstr(%cutDat(1991_4);) -log d:\log\a8.log" taskname=sys8;                                                             ```
     ```        waitfor sys1 sys2 sys3 sys4  sys5 sys6 sys7 sys8;                                                                                                      ```
     ```                                                                                                                                                               ```
-    ```        data sd1.combine/view=combine;  * somtimes for very big datasets it is to have data partitioned;                                                       ```
+    ```        data sd1.combine/view=combine;  * sometimes for very big datasets keeping partitions is useful;                                                       ```
     ```           set sd1.out_19:;             * so do not create physical combined dataset.;                                                                         ```
     ```        run;quit;                                                                                                                                              ```
     ```                                                                                                                                                               ```
